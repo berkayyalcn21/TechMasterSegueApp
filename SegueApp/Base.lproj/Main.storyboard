@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SegueApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anasayfa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIG-Wq-9DB">
+                                <rect key="frame" x="143.5" y="430" width="127.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="130" translatesAutoresizingMaskIntoConstraints="NO" id="Y4V-ha-DWp">
+                                <rect key="frame" x="94.5" y="631" width="225" height="54.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4l5-pX-U6H">
+                                        <rect key="frame" x="0.0" y="0.0" width="47.5" height="54.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="A">
+                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="35"/>
+                                            <color key="baseForegroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9pB-Ha-d70"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZV-Dj-yhk">
+                                        <rect key="frame" x="177.5" y="0.0" width="47.5" height="54.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="X">
+                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="35"/>
+                                            <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonX:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uIE-Pz-bb7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstItem="Y4V-ha-DWp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CQj-df-0Gv"/>
+                            <constraint firstItem="Y4V-ha-DWp" firstAttribute="top" secondItem="dIG-Wq-9DB" secondAttribute="bottom" constant="165" id="PJ8-J6-wnQ"/>
+                            <constraint firstItem="dIG-Wq-9DB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YY2-22-YH7"/>
+                            <constraint firstItem="dIG-Wq-9DB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pVG-tE-NDJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Bv0-f3-fAe"/>
+                    <connections>
+                        <segue destination="zDY-hK-3OT" kind="presentation" identifier="toPageA" modalPresentationStyle="fullScreen" id="K8B-bp-oEB"/>
+                        <segue destination="Rbb-t4-20S" kind="presentation" identifier="toPageX" modalPresentationStyle="fullScreen" id="wnr-vW-cIx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35" y="67"/>
+        </scene>
+        <!--SayfaAVC-->
+        <scene sceneID="AAj-MZ-fEY">
+            <objects>
+                <viewController id="zDY-hK-3OT" customClass="SayfaAVC" customModule="SegueApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="68I-gK-Jpc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sayfa A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hf-a2-XIx">
+                                <rect key="frame" x="155" y="430" width="104.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ru0-wx-3e3">
+                                <rect key="frame" x="183.5" y="631" width="47.5" height="54.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="B">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="35"/>
+                                    <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonB:" destination="zDY-hK-3OT" eventType="touchUpInside" id="nne-fM-b9L"/>
+                                    <action selector="buttonX:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XPU-sF-Hij"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xkr-7D-aS1"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="4hf-a2-XIx" firstAttribute="centerY" secondItem="68I-gK-Jpc" secondAttribute="centerY" id="4TS-Ba-Lzz"/>
+                            <constraint firstItem="ru0-wx-3e3" firstAttribute="centerX" secondItem="68I-gK-Jpc" secondAttribute="centerX" id="MPi-7x-Ivn"/>
+                            <constraint firstItem="4hf-a2-XIx" firstAttribute="centerX" secondItem="68I-gK-Jpc" secondAttribute="centerX" id="yBT-eM-Ddn"/>
+                            <constraint firstItem="ru0-wx-3e3" firstAttribute="top" secondItem="4hf-a2-XIx" secondAttribute="bottom" constant="165" id="zxZ-sk-dH9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8eD-1W-PK3"/>
+                    <connections>
+                        <segue destination="AR0-Fy-GB3" kind="presentation" identifier="toPageB" modalPresentationStyle="fullScreen" id="v9e-qa-Ic4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wJm-jO-Qgb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="797" y="67"/>
+        </scene>
+        <!--SayfaBVC-->
+        <scene sceneID="CMI-II-wlG">
+            <objects>
+                <viewController id="AR0-Fy-GB3" customClass="SayfaBVC" customModule="SegueApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WuL-dU-XtF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sayfa B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTr-cS-6nn">
+                                <rect key="frame" x="155.5" y="430" width="103" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rb7-bw-PLO">
+                                <rect key="frame" x="183.5" y="631" width="47.5" height="54.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Y">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="35"/>
+                                    <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonX:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pEE-6a-kzA"/>
+                                    <action selector="buttonY:" destination="AR0-Fy-GB3" eventType="touchUpInside" id="gWw-Cj-SKD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aZH-En-Qpf"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Rb7-bw-PLO" firstAttribute="centerX" secondItem="WuL-dU-XtF" secondAttribute="centerX" id="KHX-l6-vw5"/>
+                            <constraint firstItem="Rb7-bw-PLO" firstAttribute="top" secondItem="BTr-cS-6nn" secondAttribute="bottom" constant="165" id="QFk-QZ-2Uk"/>
+                            <constraint firstItem="BTr-cS-6nn" firstAttribute="centerY" secondItem="WuL-dU-XtF" secondAttribute="centerY" id="SDA-UQ-RCd"/>
+                            <constraint firstItem="BTr-cS-6nn" firstAttribute="centerX" secondItem="WuL-dU-XtF" secondAttribute="centerX" id="zsf-8V-0Ii"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="CaX-yQ-1Xz"/>
+                    <connections>
+                        <segue destination="IeG-r4-ujt" kind="presentation" identifier="toPageYFromB" modalPresentationStyle="fullScreen" id="5dP-9Q-Py2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="leu-fm-vLf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="796" y="765"/>
+        </scene>
+        <!--SayfaYVC-->
+        <scene sceneID="1hE-XK-oRQ">
+            <objects>
+                <viewController id="IeG-r4-ujt" customClass="SayfaYVC" customModule="SegueApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pot-T3-E2X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sayfa Y" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbj-Do-UrM">
+                                <rect key="frame" x="155.5" y="430" width="103.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Y8-7k-2hY">
+                                <rect key="frame" x="122" y="631" width="170" height="54.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Anasayfa">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="35"/>
+                                    <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonHome:" destination="IeG-r4-ujt" eventType="touchUpInside" id="Kq3-Ed-T68"/>
+                                    <action selector="buttonX:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KVN-jA-xyh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oTr-Lr-Dl3"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="jbj-Do-UrM" firstAttribute="centerX" secondItem="Pot-T3-E2X" secondAttribute="centerX" id="NX4-Oq-uf0"/>
+                            <constraint firstItem="9Y8-7k-2hY" firstAttribute="centerX" secondItem="Pot-T3-E2X" secondAttribute="centerX" id="bUo-3n-Gge"/>
+                            <constraint firstItem="9Y8-7k-2hY" firstAttribute="top" secondItem="jbj-Do-UrM" secondAttribute="bottom" constant="165" id="dUE-d1-hhL"/>
+                            <constraint firstItem="jbj-Do-UrM" firstAttribute="centerY" secondItem="Pot-T3-E2X" secondAttribute="centerY" id="y4O-gI-fUK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gk3-4Z-mBd"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toPageHome" modalPresentationStyle="fullScreen" id="VTV-Hs-2yh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xCQ-wM-E0C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1558" y="765"/>
+        </scene>
+        <!--SayfaXVC-->
+        <scene sceneID="D2X-Fa-CN6">
+            <objects>
+                <viewController id="Rbb-t4-20S" customClass="SayfaXVC" customModule="SegueApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kjs-dP-VlW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sayfa X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRF-fu-bfb">
+                                <rect key="frame" x="155" y="430" width="104" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoQ-5G-DL0">
+                                <rect key="frame" x="183.5" y="631" width="47.5" height="54.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Y">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="35"/>
+                                    <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonX:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kqe-Hp-Tig"/>
+                                    <action selector="buttonY:" destination="Rbb-t4-20S" eventType="touchUpInside" id="3cI-zY-v9i"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="s01-Kb-RlU"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WRF-fu-bfb" firstAttribute="centerY" secondItem="kjs-dP-VlW" secondAttribute="centerY" id="WxW-xM-IDU"/>
+                            <constraint firstItem="uoQ-5G-DL0" firstAttribute="centerX" secondItem="kjs-dP-VlW" secondAttribute="centerX" id="esV-oa-vw7"/>
+                            <constraint firstItem="uoQ-5G-DL0" firstAttribute="top" secondItem="WRF-fu-bfb" secondAttribute="bottom" constant="165" id="jvz-8v-mQV"/>
+                            <constraint firstItem="WRF-fu-bfb" firstAttribute="centerX" secondItem="kjs-dP-VlW" secondAttribute="centerX" id="vWh-yf-nCI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nB5-XA-WlS"/>
+                    <connections>
+                        <segue destination="IeG-r4-ujt" kind="presentation" identifier="toPageYFromX" modalPresentationStyle="fullScreen" id="eMt-8h-xSa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pTJ-Pc-r7F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1559" y="67"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="5dP-9Q-Py2"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
