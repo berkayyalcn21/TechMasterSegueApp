@@ -2,10 +2,11 @@
 
 ### Tech Master Bootcamp Segue Uygulaması
 
-![Simulator](https://github.com/berkayyalcn21/TechMasterSegueApp/blob/main/image/Ads%C4%B1z%20tasar%C4%B1m.png)
+![Simulator](https://github.com/berkayyalcn21/TechMasterCalculatorApp/blob/main/images/2.png)
 
 
 ### Tools
 
 - Swift
 - UIKit
+- Canva
